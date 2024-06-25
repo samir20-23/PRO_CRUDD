@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Client</title>
+    <link rel="stylesheet" href='../croad_ADD.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <form enctype="multipart/form-data" action="add.php" method="POST" id="form">
+        <div id="verified">ADD</div>
+        <div id="inputs">
+            <h3>Client Fullname:</h3>
+            <input type="text" name="clientFullname" id="clientFullname">
+            <div class="err" id="errclientFullname"></div>
+            
+            <h3>Client Email:</h3>
+            <input type="text" name="clientEmail" id="clientEmail">
+            <div class="err" id="errclientEmail"></div>
+            <div class="err" id="erremail"></div>
+            <h3>Client Ty:</h3>
+            <input type="text" name="clientTy" id="clientTy">
+            <div class="err" id="errclientTy"></div>
+            
+            <h3>Client Phone:</h3>
+            <input type="text" name="clientPhone" id="clientPhone">
+            <div class="err" id="errclientPhone"></div>
+            
+            <h3>Client Age:</h3>
+            <input type="text" name="clientAge" id="clientAge">
+            <div class="err" id="errclientAge"></div>
+            
+            <h3>Client Password:</h3>
+            <input type="text" name="clientPassword" id="clientPassword">
+            <div class="err" id="errclientPassword"></div>
+        </div>
+        <div class="loaderto">
+            <div class="loader"></div>
+        </div>
+        <a href="../croad_CLIENT.php" id="linklogin"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Croad</a>
+        <input type="submit" name="submit" id="submit" value="Submit">
+    </form>
+    <script src="add.js"></script>
+</body>
+</html>
